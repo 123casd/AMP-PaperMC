@@ -1,0 +1,20 @@
+[
+  {
+    "UpdateStageName": "Create forwarding secret file",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}forwarding.secret",
+    "UpdateSourceData": "{{ForwardingSecret}}",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  },
+  {
+    "UpdateStageName": "Seed velocity.toml if missing",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}velocity.toml",
+    "UpdateSourceData": "config-version = \"2.7\"\nbind = \"{{BindAddress}}:{{$ApplicationPort1}}\"\nmotd = \"A Velocity Proxy Powered by AMP\"\nshow-max-players = 500\nonline-mode = {{ProxyOnlineMode}}\nforce-key-authentication = true\nplayer-info-forwarding-mode = \"modern\"\nforwarding-secret-file = \"forwarding.secret\"\nannounce-forge = false\nkick-existing-players = false\nping-passthrough = \"DISABLED\"\nenable-player-address-logging = true\n[servers]\n{{DefaultBackendName}} = \"{{DefaultBackendAddress}}\"\ntry = [\"{{DefaultBackendName}}\"]\n[forced-hosts]\n[advanced]\ncompression-threshold = 256\ncompression-level = -1\nlogin-ratelimit = 3000\nconnection-timeout = 5000\nread-timeout = 30000\nhap-proxy-protocol = false\ntcp-fast-open = false\nbungee-plugin-message-channel = true\nshow-ping-requests = false\nfailover-on-unexpected-server-disconnect = true\nannounce-proxy-commands = true\nlog-command-executions = false\nlog-player-connections = true\naccepts-transfers = false\n",
+    "OverwriteExistingFiles": false,
+    "SkipOnFailure": false
+  }
+]

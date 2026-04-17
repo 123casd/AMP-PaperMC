@@ -1,0 +1,270 @@
+[
+  {
+    "DisplayName": "Server Port",
+    "Category": "Paper:Network",
+    "Subcategory": "Server:Ports",
+    "Description": "AMP-managed server port",
+    "Keywords": "port,server-port",
+    "FieldName": "$ApplicationPort1",
+    "InputType": "number",
+    "Hidden": true,
+    "IsFlagArgument": false,
+    "ParamFieldName": "server-port",
+    "IncludeInCommandLine": false,
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Bind Address",
+    "Category": "Paper:Network",
+    "Subcategory": "Server:Ports",
+    "Description": "Set to 127.0.0.1 when this Paper server sits behind Velocity on the same host.",
+    "Keywords": "ip,bind,server-ip",
+    "FieldName": "BindAddress",
+    "InputType": "text",
+    "ParamFieldName": "server-ip",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "",
+    "Placeholder": "127.0.0.1",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "MOTD",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "Server MOTD.",
+    "Keywords": "motd,description",
+    "FieldName": "MOTD",
+    "InputType": "text",
+    "ParamFieldName": "motd",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "AMP Powered Paper Server",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Player Limit",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "Maximum connected players.",
+    "Keywords": "players,max-players",
+    "FieldName": "$MaxUsers",
+    "InputType": "number",
+    "MinValue": "1",
+    "ParamFieldName": "max-players",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "20",
+    "Placeholder": "20",
+    "Suffix": "players",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Game Mode",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "Default game mode.",
+    "Keywords": "gamemode,game-mode",
+    "FieldName": "GameMode",
+    "InputType": "enum",
+    "ParamFieldName": "gamemode",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "survival",
+    "EnumValues": {
+      "survival": "Survival",
+      "creative": "Creative",
+      "adventure": "Adventure",
+      "spectator": "Spectator"
+    }
+  },
+  {
+    "DisplayName": "Difficulty",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "World difficulty.",
+    "Keywords": "difficulty",
+    "FieldName": "Difficulty",
+    "InputType": "enum",
+    "ParamFieldName": "difficulty",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "easy",
+    "EnumValues": {
+      "peaceful": "Peaceful",
+      "easy": "Easy",
+      "normal": "Normal",
+      "hard": "Hard"
+    }
+  },
+  {
+    "DisplayName": "Level Name",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:World",
+    "Description": "Main world folder name.",
+    "Keywords": "level-name,world",
+    "FieldName": "LevelName",
+    "InputType": "text",
+    "ParamFieldName": "level-name",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "world",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Online Mode",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:Security",
+    "Description": "Disable this on backend Paper servers that sit behind Velocity modern forwarding.",
+    "Keywords": "online-mode,auth",
+    "FieldName": "OnlineMode",
+    "InputType": "checkbox",
+    "ParamFieldName": "online-mode",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Whitelist",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:Security",
+    "Description": "Enable whitelist.",
+    "Keywords": "whitelist,white-list",
+    "FieldName": "WhiteList",
+    "InputType": "checkbox",
+    "ParamFieldName": "white-list",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Enforce Whitelist",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:Security",
+    "Description": "Kick non-whitelisted players immediately when whitelist is enabled.",
+    "Keywords": "enforce-whitelist",
+    "FieldName": "EnforceWhitelist",
+    "InputType": "checkbox",
+    "ParamFieldName": "enforce-whitelist",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "PVP",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "Enable player-vs-player combat.",
+    "Keywords": "pvp",
+    "FieldName": "PVP",
+    "InputType": "checkbox",
+    "ParamFieldName": "pvp",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Allow Flight",
+    "Category": "Paper:Server",
+    "Subcategory": "Gameplay:General",
+    "Description": "Allow flight without kicks.",
+    "Keywords": "allow-flight",
+    "FieldName": "AllowFlight",
+    "InputType": "checkbox",
+    "ParamFieldName": "allow-flight",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "false",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "View Distance",
+    "Category": "Paper:Performance",
+    "Subcategory": "Gameplay:Tuning",
+    "Description": "Server view distance.",
+    "Keywords": "view-distance",
+    "FieldName": "ViewDistance",
+    "InputType": "number",
+    "MinValue": "2",
+    "ParamFieldName": "view-distance",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "10",
+    "Suffix": "chunks",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Simulation Distance",
+    "Category": "Paper:Performance",
+    "Subcategory": "Gameplay:Tuning",
+    "Description": "Server simulation distance.",
+    "Keywords": "simulation-distance",
+    "FieldName": "SimulationDistance",
+    "InputType": "number",
+    "MinValue": "2",
+    "ParamFieldName": "simulation-distance",
+    "IncludeInCommandLine": false,
+    "DefaultValue": "10",
+    "Suffix": "chunks",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Minimum RAM",
+    "Category": "Paper:Runtime",
+    "Subcategory": "Java:Memory",
+    "Description": "Initial heap size in megabytes.",
+    "Keywords": "xms,ram,memory",
+    "FieldName": "MinRAMMB",
+    "InputType": "number",
+    "MinValue": "512",
+    "DefaultValue": "2048",
+    "Placeholder": "2048",
+    "Suffix": "MB",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Maximum RAM",
+    "Category": "Paper:Runtime",
+    "Subcategory": "Java:Memory",
+    "Description": "Maximum heap size in megabytes.",
+    "Keywords": "xmx,ram,memory",
+    "FieldName": "MaxRAMMB",
+    "InputType": "number",
+    "MinValue": "512",
+    "DefaultValue": "4096",
+    "Placeholder": "4096",
+    "Suffix": "MB",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Custom Java Args",
+    "Category": "Paper:Runtime",
+    "Subcategory": "Java:Startup",
+    "Description": "Optional extra JVM arguments.",
+    "Keywords": "java,args,jvm",
+    "FieldName": "CustomJavaArgs",
+    "InputType": "text",
+    "DefaultValue": "",
+    "Placeholder": "",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Paper JAR URL",
+    "Category": "Paper:Runtime",
+    "Subcategory": "Updates:Download",
+    "Description": "Direct URL to the Paper server JAR you want AMP to download as server.jar.",
+    "Keywords": "paper,url,jar,download",
+    "FieldName": "ServerJarURL",
+    "InputType": "url",
+    "DefaultValue": "",
+    "Placeholder": "https://.../paper-<version>-<build>.jar",
+    "EnumValues": {}
+  }
+]

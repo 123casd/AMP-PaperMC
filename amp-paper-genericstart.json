@@ -1,0 +1,11 @@
+[
+  {
+    "UpdateStageName": "Accept Minecraft EULA",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "CreateFile",
+    "UpdateSourceArgs": "{{$FullBaseDir}}eula.txt",
+    "UpdateSourceData": "eula=true",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  }
+]

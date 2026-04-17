@@ -1,0 +1,9 @@
+[
+  {
+    "Protocol": "TCP",
+    "Port": 25566,
+    "Ref": "ApplicationPort1",
+    "Name": "Minecraft Server Port",
+    "Description": "Port for Paper client connections"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "UpdateStageName": "Download Paper server jar",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "{{ServerJarURL}}",
+    "UpdateSourceArgs": "server.jar",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  }
+]

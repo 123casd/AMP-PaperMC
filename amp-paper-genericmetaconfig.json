@@ -1,0 +1,28 @@
+[
+  {
+    "ConfigFile": "server.properties",
+    "ConfigType": "kvp",
+    "ConfigFormat": "{0}={1}",
+    "Subsections": [
+      {
+        "Heading": "$root",
+        "SettingMappings": {
+          "$ApplicationPort1": "server-port",
+          "BindAddress": "server-ip",
+          "MOTD": "motd",
+          "$MaxUsers": "max-players",
+          "GameMode": "gamemode",
+          "Difficulty": "difficulty",
+          "LevelName": "level-name",
+          "OnlineMode": "online-mode",
+          "WhiteList": "white-list",
+          "EnforceWhitelist": "enforce-whitelist",
+          "PVP": "pvp",
+          "AllowFlight": "allow-flight",
+          "ViewDistance": "view-distance",
+          "SimulationDistance": "simulation-distance"
+        }
+      }
+    ]
+  }
+]

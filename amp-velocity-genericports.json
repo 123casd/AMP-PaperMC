@@ -1,0 +1,9 @@
+[
+  {
+    "Protocol": "TCP",
+    "Port": 25565,
+    "Ref": "ApplicationPort1",
+    "Name": "Velocity Proxy Port",
+    "Description": "Port for incoming player connections"
+  }
+]

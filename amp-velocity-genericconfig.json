@@ -1,0 +1,129 @@
+[
+  {
+    "DisplayName": "Proxy Port",
+    "Category": "Velocity:Network",
+    "Subcategory": "Proxy:Ports",
+    "Description": "AMP-managed proxy listen port.",
+    "Keywords": "bind,port",
+    "FieldName": "$ApplicationPort1",
+    "InputType": "number",
+    "Hidden": true,
+    "IsFlagArgument": false,
+    "ParamFieldName": "bind-port",
+    "IncludeInCommandLine": false,
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Bind Address",
+    "Category": "Velocity:Network",
+    "Subcategory": "Proxy:Ports",
+    "Description": "IP address for Velocity to bind to.",
+    "Keywords": "bind,address,ip",
+    "FieldName": "BindAddress",
+    "InputType": "text",
+    "DefaultValue": "0.0.0.0",
+    "Placeholder": "0.0.0.0",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Default Backend Name",
+    "Category": "Velocity:Routing",
+    "Subcategory": "Servers:Default",
+    "Description": "Name of the default backend in velocity.toml.",
+    "Keywords": "backend,lobby,default,server",
+    "FieldName": "DefaultBackendName",
+    "InputType": "text",
+    "DefaultValue": "lobby",
+    "Placeholder": "lobby",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Default Backend Address",
+    "Category": "Velocity:Routing",
+    "Subcategory": "Servers:Default",
+    "Description": "Address of the default backend, e.g. 127.0.0.1:25566.",
+    "Keywords": "backend,address,target",
+    "FieldName": "DefaultBackendAddress",
+    "InputType": "text",
+    "DefaultValue": "127.0.0.1:25566",
+    "Placeholder": "127.0.0.1:25566",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Online Mode",
+    "Category": "Velocity:Security",
+    "Subcategory": "Proxy:Authentication",
+    "Description": "Whether the proxy authenticates players with Mojang.",
+    "Keywords": "online-mode",
+    "FieldName": "ProxyOnlineMode",
+    "InputType": "checkbox",
+    "DefaultValue": "true",
+    "EnumValues": {
+      "False": "false",
+      "True": "true"
+    }
+  },
+  {
+    "DisplayName": "Forwarding Secret",
+    "Category": "Velocity:Security",
+    "Subcategory": "Proxy:Forwarding",
+    "Description": "Shared secret used for Velocity modern forwarding.",
+    "Keywords": "secret,forwarding,velocity",
+    "FieldName": "ForwardingSecret",
+    "InputType": "password",
+    "DefaultValue": "CHANGE-ME-TO-A-LONG-RANDOM-SECRET",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Minimum RAM",
+    "Category": "Velocity:Runtime",
+    "Subcategory": "Java:Memory",
+    "Description": "Initial heap size in megabytes.",
+    "Keywords": "xms,ram,memory",
+    "FieldName": "MinRAMMB",
+    "InputType": "number",
+    "MinValue": "256",
+    "DefaultValue": "1024",
+    "Placeholder": "1024",
+    "Suffix": "MB",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Maximum RAM",
+    "Category": "Velocity:Runtime",
+    "Subcategory": "Java:Memory",
+    "Description": "Maximum heap size in megabytes.",
+    "Keywords": "xmx,ram,memory",
+    "FieldName": "MaxRAMMB",
+    "InputType": "number",
+    "MinValue": "256",
+    "DefaultValue": "2048",
+    "Placeholder": "2048",
+    "Suffix": "MB",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Custom Java Args",
+    "Category": "Velocity:Runtime",
+    "Subcategory": "Java:Startup",
+    "Description": "Optional extra JVM arguments.",
+    "Keywords": "java,args,jvm",
+    "FieldName": "CustomJavaArgs",
+    "InputType": "text",
+    "DefaultValue": "",
+    "Placeholder": "",
+    "EnumValues": {}
+  },
+  {
+    "DisplayName": "Velocity JAR URL",
+    "Category": "Velocity:Runtime",
+    "Subcategory": "Updates:Download",
+    "Description": "Direct URL to the Velocity JAR AMP should download as velocity.jar.",
+    "Keywords": "velocity,url,jar,download",
+    "FieldName": "VelocityJarURL",
+    "InputType": "url",
+    "DefaultValue": "",
+    "Placeholder": "https://.../velocity-<version>-<build>.jar",
+    "EnumValues": {}
+  }
+]

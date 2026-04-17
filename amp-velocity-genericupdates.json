@@ -1,0 +1,12 @@
+[
+  {
+    "UpdateStageName": "Download Velocity proxy jar",
+    "UpdateSourcePlatform": "All",
+    "UpdateSource": "FetchURL",
+    "UpdateSourceData": "{{VelocityJarURL}}",
+    "UpdateSourceArgs": "velocity.jar",
+    "UpdateSourceTarget": "{{$FullBaseDir}}",
+    "OverwriteExistingFiles": true,
+    "SkipOnFailure": false
+  }
+]
