@@ -1,4 +1,4 @@
-Meta.DisplayName=Minecraft (Paper)
+Meta.DisplayName=Paper (Generic)
 Meta.Description=Paper Minecraft Server
 Meta.OS=Windows, Linux
 Meta.AarchSupport=Unknown
@@ -27,8 +27,8 @@ Meta.BreakingReleaseNotes=
 Meta.AppConfigId=4a0d16b7-7f63-49cc-bc0e-0f4572be9484
 Meta.ImportableExtensions=[]
 App.DisplayName=Paper
-App.RootDir=./Paper/
-App.BaseDirectory=./Paper/
+App.RootDir=./
+App.BaseDirectory=./
 App.SteamWorkshopDownloadLocation=
 App.ExecutableWin=java.exe
 App.ExecutableLinux=java
