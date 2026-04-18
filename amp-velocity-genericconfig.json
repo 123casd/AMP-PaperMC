@@ -122,7 +122,7 @@
     "Keywords": "velocity,url,jar,download",
     "FieldName": "VelocityJarURL",
     "InputType": "url",
-    "DefaultValue": "",
+    "DefaultValue": "https://fill-data.papermc.io/v1/objects/25bfbee6155fbce24f709bf18f1bb915817c4151d6d418ca01282742ab1f123a/velocity-3.5.0-SNAPSHOT-593.jar",
     "Placeholder": "https://.../velocity-<version>-<build>.jar",
     "EnumValues": {}
   }
