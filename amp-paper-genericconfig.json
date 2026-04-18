@@ -115,7 +115,7 @@
     "InputType": "checkbox",
     "ParamFieldName": "online-mode",
     "IncludeInCommandLine": false,
-    "DefaultValue": "true",
+    "DefaultValue": "false",
     "EnumValues": {
       "False": "false",
       "True": "true"
