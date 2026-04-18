@@ -263,7 +263,7 @@
     "Keywords": "paper,url,jar,download",
     "FieldName": "ServerJarURL",
     "InputType": "url",
-    "DefaultValue": "",
+    "DefaultValue": "https://fill-data.papermc.io/v1/objects/25eb85bd8415195ce4bc188e1939e0c7cef77fb51d26d4e766407ee922561097/paper-1.21.11-130.jar",
     "Placeholder": "https://.../paper-<version>-<build>.jar",
     "EnumValues": {}
   }
